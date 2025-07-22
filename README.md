@@ -1,4 +1,5 @@
 # HR-Data-Analysis-in-SQL
+Analyzed HR datasets using SQL to extract insights on employee attrition, performance, hiring trends, and organizational structure for data-driven decision-making.
 
 📊 HR Analytics SQL Project
 A comprehensive SQL-based data analysis project to uncover HR insights, drive business decisions, and support workforce strategies.
