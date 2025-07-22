@@ -36,6 +36,23 @@ Department, Position, ManagerName	Job role & hierarchy
 RecruitmentSource	Source of hiring
 TermReason, Termd	Termination info
 
+## 🗂️ HR Data Analysis Overview
+
+![HR Dataset Sample](https://raw.githubusercontent.com/samiksha29-patil/HR-Data-Analysis-in-SQL/main/HRDataset%201.jpeg)
+
+## 📌 HR Dataset Insights
+
+![HR Dataset Analysis](https://raw.githubusercontent.com/samiksha29-patil/HR-Data-Analysis-in-SQL/main/HRDataset%202.jpeg)
+
+## 📊 Visual Summary of HR Metrics
+
+![HR Dataset Visual](https://raw.githubusercontent.com/samiksha29-patil/HR-Data-Analysis-in-SQL/main/HRDataset%203.jpeg)
+
+## 📌 Departmental Attrition & Performance Overview
+
+![Departmental Analysis](https://raw.githubusercontent.com/samiksha29-patil/HR-Data-Analysis-in-SQL/main/HRDataset%204.jpeg)
+
+
 🧹 Data Cleaning & Preparation
 Converted date strings (DOB, DateOfHire, etc.) to proper DATE format
 
