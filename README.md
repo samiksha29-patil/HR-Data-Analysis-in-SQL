@@ -52,6 +52,10 @@ TermReason, Termd	Termination info
 
 ![Departmental Analysis](https://raw.githubusercontent.com/samiksha29-patil/HR-Data-Analysis-in-SQL/main/HRDataset%204.jpeg)
 
+## 🧩 Core HR Metrics Snapshot
+
+![Core HR Metrics](https://raw.githubusercontent.com/samiksha29-patil/HR-Data-Analysis-in-SQL/main/HRDataset%205.jpeg)
+
 
 🧹 Data Cleaning & Preparation
 Converted date strings (DOB, DateOfHire, etc.) to proper DATE format
