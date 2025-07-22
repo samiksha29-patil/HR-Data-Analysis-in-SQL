@@ -1,115 +1,137 @@
 # HR-Data-Analysis-in-SQL
 
 📊 HR Analytics SQL Project
+A comprehensive SQL-based data analysis project to uncover HR insights, drive business decisions, and support workforce strategies.
 
-🧾 Project Overview
-This project analyzes employee data using SQL to extract insights related to employee demographics, employment status, attrition, salary, performance, and more. The purpose is to derive meaningful patterns to aid HR decision-making.
+🧾 Overview
+This project leverages SQL to analyze an HR dataset and extract actionable insights about employee demographics, attrition, performance, salary distribution, and recruitment sources. It includes data cleaning, transformation, aggregation, and analysis to support human resources decision-making with real-time metrics and trends.
 
-🛠️ Tools & Technologies
-Database: MySQL / MariaDB
+🎯 Objectives
+Identify key drivers of employee attrition
 
-Language: SQL
+Analyze employee performance, tenure, and absenteeism
 
-Data Source: employees table in hrproject database
+Understand salary distribution and compensation trends
 
-📂 Project Structure
-The project consists of multiple SQL operations categorized as follows:
+Explore demographic patterns and hiring sources
 
-1. Database Setup
-Create and use hrproject database.
+Enable data-informed HR policy and strategic planning
 
-View and explore the employees table.
+🛠️ Tech Stack
+Tool	Purpose
+MySQL	Query language & data processing
+SQL Workbench / VS Code	Query execution environment
+CSV Dataset	Employee data source
 
-2. Employee Statistics
-Total number of employees.
+📂 Dataset Features
+Table Name: employees
 
-Current vs. terminated employees.
+Column	Description
+EmpID	Unique Employee ID
+DOB, DateOfHire, DateOfTermination	Date fields for lifecycle analysis
+Salary, Absences	Compensation and absenteeism details
+PerformanceScore	Recent performance rating
+Sex, MaritalDesc, State	Demographic indicators
+Department, Position, ManagerName	Job role & hierarchy
+RecruitmentSource	Source of hiring
+TermReason, Termd	Termination info
 
-Average salary, age, and tenure (years in company).
+🧹 Data Cleaning & Preparation
+Converted date strings (DOB, DateOfHire, etc.) to proper DATE format
 
-3. Data Cleaning & Transformation
-Format and convert date fields (DOB, DateOfHire, DateOfTermination, etc.).
+Replaced blank/null termination dates with 'CurrentlyWorking'
 
-Add and calculate age from DOB.
+Added computed fields:
 
-Update and standardize DateOfTermination for consistency.
+Age from DOB
 
-4. Attrition Analysis
-Add EmployeeCurrentStatus (1 = active, 0 = terminated).
+EmployeeCurrentStatus (1 = active, 0 = former)
 
-Calculate attrition rate based on employment status.
+Updated salary data type to DECIMAL(10,2)
 
-5. Demographic Distributions
-Marital status, gender, age groups, state-wise employee counts.
+🔍 Key Insights & Queries
+1. 📌 Employee Counts
+Total, current, and former employees
 
-6. Job & Department Insights
-Department-wise distribution and average salaries.
+Count of terminations by reason, state, or marital status
 
-Absence records by department.
+2. 📊 Demographics
+Gender, age, and state distribution
 
-Performance scores and their distribution.
+Age segmentation into ranges (20s, 30s, etc.)
 
-Recruitment source effectiveness.
+3. 💰 Salary Analysis
+Salary distribution by range
 
-7. Salary Analysis
-Salary range distribution.
+Salary breakdown by gender and department
 
-Salary by gender.
+Average salary per department
 
-8. Termination Analysis
-Reasons for termination.
+4. 📉 Attrition & Tenure
+Attrition rate calculation
 
-Termination count by marital status.
+Average tenure (years in company)
 
-📊 Key Metrics Calculated
-Average employee salary & tenure
+Termination analysis by department & demographics
 
-Attrition rate
+5. 🧲 Recruitment Source Performance
+Employee count by recruitment source
 
-Age and salary distributions
+Analysis of hires by source vs attrition
 
-Department-wise absences
+6. 📈 Performance & Absenteeism
+Absences by department
 
-Gender-wise salary totals
+Average absences by performance score
 
-Performance-related absence trends
+Performance score frequency
 
-🧩 Usage Instructions
-Create the database using:
+🧠 Insights Generated
+Departments with highest absenteeism or attrition
+
+Gender pay gap trends
+
+States with high employee counts or terminations
+
+Correlation between performance and absenteeism
+
+🗃️ Folder Structure (Suggestion)
+bash
+Copy
+Edit
+hr-analytics-sql/
+├── README.md
+├── hr_analysis_script.sql
+├── employees.csv
+├── visuals/               # Optional: graphs, dashboards
+└── documentation/         # Optional: ER diagrams, notes
+🚀 How to Use
+Create the database:
 
 sql
 Copy
 Edit
 CREATE DATABASE hrproject;
 USE hrproject;
-Import your dataset into the employees table.
+Import the CSV into a table called employees.
 
-Run the script in any MySQL-compatible environment.
+Run the script: hr_analysis_script.sql.
 
-View results to extract insights and build HR reports or dashboards.
+View and export the query results or use them in Power BI/Tableau.
 
-📌 Notes
-Ensure date fields are in correct format (%d-%m-%Y or %Y-%m-%d) before running the STR_TO_DATE() conversions.
+🔮 Future Enhancements
+Automate monthly HR reporting using stored procedures
 
-The column termd is used to indicate termination (likely a binary flag).
+Build a Power BI dashboard from these queries
 
-NULL and blank values are standardized (e.g., DateOfTermination).
+Integrate machine learning to predict attrition
 
-✅ Outcomes
-By the end of this project, you will be able to:
+Implement role-based access for secure HR data handling
 
-Understand workforce trends and demographics
+📄 License
+Licensed under the MIT License.
 
-Identify attrition causes and performance patterns
-
-Segment employee data for detailed HR analytics
-
-Support HR strategies with actionable SQL insights
-
-🧠 Further Improvements
-Visualize insights using Tableau/Power BI
-
-Automate reports through stored procedures
-
-Integrate with HR platforms or APIs for real-time analytics
-
+🙋‍♂️ Author
+Your Name
+📧 your.email@example.com
+🔗 LinkedIn | GitHub
